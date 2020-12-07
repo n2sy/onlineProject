@@ -1,0 +1,12 @@
+<h1> Je suis le color component</h1>
+
+<h3> Je suis {{ prenom }}</h3>
+
+<input type="text" [(ngModel)]="prenom" >
+
+<div [hidden]="show" [style.backgroundColor]="cl">
+    Formation en Angular
+</div>
+
+<button class="btn btn-primary" (click)="showAlert()">Cliquez ici</button>
+<button class="btn btn-primary" (click)="toggleHidden()">Show / Hide</button>
